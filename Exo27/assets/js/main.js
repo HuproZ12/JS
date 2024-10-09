@@ -47,7 +47,8 @@ let getPokemon = async (id) => {
     }
 };
 
-document.getElementById('pokemon-search').addEventListener('submit', () => {
+document.getElementById('pokemon-search').addEventListener('submit', (event) => {
+    event.preventDefault();
     let recherche = document.getElementById("search-input").value;
     getPokemon(recherche);
 });
