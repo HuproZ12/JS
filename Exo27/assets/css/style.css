@@ -1,0 +1,131 @@
+/* Import Bootstrap CSS */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+body {
+    background-color: #ffcc00; /* Fond jaune vif */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #ff5733; /* Rouge vif */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ffcc00;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+header form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header input {
+    width: 300px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ffcc00;
+}
+
+header button {
+    background-color: #33cc33; /* Vert vif */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: #2ecc71;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#pokemon-display {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    border: 5px solid #ffcc00;
+}
+
+#pokemon-picture {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#pokemon-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5733;
+    margin-bottom: 10px;
+}
+
+#pokemon-weight, #pokemon-height {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pokemon-info {
+    margin-bottom: 20px;
+}
+
+.pokemon-info h3 {
+    color: #ff5733;
+    margin-bottom: 10px;
+}
+
+#pokemon-types, #pokemon-abilities {
+    list-style: none;
+    padding: 0;
+}
+
+#pokemon-types li {
+    background-color: #ff5733; /* Rouge vif pour les types */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+#pokemon-abilities li {
+    background-color: #33cc33; /* Vert vif pour les capacités */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+#pokemon-previous, #pokemon-next {
+    background-color: #33cc33;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#pokemon-previous:disabled, #pokemon-next:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
