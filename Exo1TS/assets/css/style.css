@@ -1,0 +1,181 @@
+/* Import Bootstrap CSS */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+body {
+    background-color: #ffcc00; /* Fond jaune vif */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #ff5733; /* Rouge vif */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ffcc00;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+header form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header input {
+    width: 300px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ffcc00;
+}
+
+header button {
+    background-color: #33cc33; /* Vert vif */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: #2ecc71;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#pokemon-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    border: 5px solid #ffcc00;
+}
+
+#pokemon-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#pokemon-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5733;
+}
+
+#pokemon-id {
+    font-size: 20px;
+    color: #333;
+}
+
+#pokemon-picture {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#pokemon-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    text-align: left;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #333;
+}
+
+#pokemon-weight, #pokemon-height {
+    font-size: 20px;
+    color: #333;
+}
+
+.pokemon-info {
+    margin-bottom: 20px;
+}
+
+.pokemon-info h3 {
+    color: #ff5733;
+    margin-bottom: 10px;
+}
+
+#pokemon-types, #pokemon-abilities {
+    list-style: none;
+    padding: 0;
+}
+
+#pokemon-types li {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    color: white;
+}
+
+#pokemon-abilities li {
+    background-color: #33cc33; /* Vert vif pour les capacités */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* Couleurs spécifiques pour chaque type de Pokémon */
+.type-normal { background-color: #A8A77A; }
+.type-fire { background-color: #EE8130; }
+.type-water { background-color: #6390F0; }
+.type-electric { background-color: #F7D02C; }
+.type-grass { background-color: #7AC74C; }
+.type-ice { background-color: #96D9D6; }
+.type-fighting { background-color: #C22E28; }
+.type-poison { background-color: #A33EA1; }
+.type-ground { background-color: #E2BF65; }
+.type-flying { background-color: #A98FF3; }
+.type-psychic { background-color: #F95587; }
+.type-bug { background-color: #A6B91A; }
+.type-rock { background-color: #B6A136; }
+.type-ghost { background-color: #735797; }
+.type-dragon { background-color: #6F35FC; }
+.type-dark { background-color: #705746; }
+.type-steel { background-color: #B7B7CE; }
+.type-fairy { background-color: #D685AD; }
+
+#navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#pokemon-previous, #pokemon-next {
+    background-color: #33cc33;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#pokemon-previous:disabled, #pokemon-next:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
