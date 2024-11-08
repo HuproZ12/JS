@@ -49,6 +49,7 @@ li {
 
 /* Style pour les liens */
 a {
+    color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s;
 }
