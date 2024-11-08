@@ -49,11 +49,13 @@ li {
 
 /* Style pour les liens */
 a {
-    color: #FF00FF;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #00FFFF;
+    color: #FF00FF;
 }
+
+
+/* #00FFFF */
