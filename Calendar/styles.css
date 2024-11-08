@@ -1,3 +1,39 @@
 body {
+    font-family: Arial, sans-serif;
     background: linear-gradient(315deg, #3f5efb, #fc466b);
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+#calendar-container {
+    flex: 1;
+    padding: 20px;
+}
+
+#task-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.hidden {
+    display: none;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: #e0e0e0;
 }
