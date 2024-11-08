@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     margin: 0;
     padding: 0;
@@ -6,25 +7,34 @@ body {
     background-size: cover;
     color: #FFFFFF;
     text-align: center;
+
+    /* Flexbox pour centrer verticalement */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 h1 {
     font-size: 3em;
-    margin-top: 50px;
+    margin: 20px 0 40px 0; /* Plus de marge en bas pour espacer du reste */
     text-shadow: 2px 2px 4px #000000;
 }
 
+/* Ajustement pour centrer les liens et augmenter la taille */
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 li {
     margin: 20px 0;
-    font-size: 1.5em;
+    font-size: 2em; /* Augmentation de la taille de police */
     text-shadow: 2px 2px 4px #000000;
 }
 
+/* Lien style et hover */
 a {
     color: #FF00FF;
     text-decoration: none;
