@@ -8,20 +8,29 @@ body {
     color: #FFFFFF;
     text-align: center;
 
-    /* Flexbox pour centrer verticalement */
+    /* Flexbox pour organiser le titre en haut et les liens de projet au centre */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     min-height: 100vh;
 }
 
+/* Positionne le titre en haut de la page */
 h1 {
     font-size: 3em;
-    margin: 20px 0 40px 0; /* Plus de marge en bas pour espacer du reste */
+    margin: 20px 0;
     text-shadow: 2px 2px 4px #000000;
 }
 
-/* Ajustement pour centrer les liens et augmenter la taille */
+/* Nouveau conteneur pour la liste de projets */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Espace les liens de manière égale */
+    flex-grow: 1; /* Permet d'occuper l'espace restant sous le titre */
+}
+
+/* Styles pour les éléments de la liste */
 ul {
     list-style-type: none;
     padding: 0;
@@ -29,12 +38,11 @@ ul {
 }
 
 li {
-    margin: 20px 0;
-    font-size: 2em; /* Augmentation de la taille de police */
+    font-size: 2em;
     text-shadow: 2px 2px 4px #000000;
 }
 
-/* Lien style et hover */
+/* Style pour les liens */
 a {
     color: #FF00FF;
     text-decoration: none;
