@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reporting</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="calendar-container">
-  <div id="calendar"></div>
-</div>
-<div id="task-container" class="hidden">
-  <div id="task-content"></div>
+<div class="container-fluid h-100">
+  <div class="row h-100">
+    <div id="calendar-container" class="col-md-6 h-100">
+      <div id="calendar" class="p-3"></div>
+    </div>
+    <div id="task-container" class="col-md-6 h-100 hidden p-3">
+      <div id="task-content"></div>
+    </div>
+  </div>
 </div>
 <script src="script.js"></script>
 </body>
